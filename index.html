@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <!--server-client connection-->
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="login-container">
+            <div class="header">
+                <h2>Login</h2>
+            </div>
+            
+            <form id="login-form">
+                <!-- <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br> -->
+                <div className="inputs1">
+                    <div className="input1">
+                        <img src="assets/user.jpg" alt="" style="width: 30px; height: 30px;" />
+                        <input type="text" placeholder="Name" id="username" name="username" required/>
+                    </div>
+                   
+
+                    <div className="input1">
+                        <img src="assets/password.jpg" alt="" style="width: 30px; height: 30px;" />
+                        <input type="password"  placeholder="Password"  id="password" name="password" required />
+                    </div>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <div id="error-message"></div>
+        </div>
+
+        <div id="chat-container" style="display: none;">
+            <div class="heading">
+                <h1 class="hospital">Global Bank</h1>
+                <img class="logo" src="assets/bank.jpg" alt="">
+            </div>
+
+            <div class="mcontainer">
+                <!-- <div class="message left"></div>
+                <div class="message right"></div> -->
+            </div>
+            <div class="send">
+                <form action="#" id="send-container">
+                    <input type="text" name="mssg" id="mssg">
+                    <button class="btn" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,204 @@
+/* Body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    /*background-image: url("assets/background.jpeg");
+    background-size: cover;
+    background-position: center;*/
+    background: linear-gradient(#a4b2eb, #5363b6);
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    height: 100vh;
+}
+
+/* Heading styling */
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.hospital {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Chat container styling */
+.mcontainer {
+    max-width: 955px;
+    border: 2px solid black;
+    margin: auto;
+    height: 60vh;
+    padding: 33px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background: linear-gradient(to bottom, rgb(185, 181, 235), white);
+}
+
+.message {
+    background-color: white;
+    width: 24%;
+    padding: 10px;
+    margin: 17px 12px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.left {
+    float: left;
+    clear: both;
+}
+
+.right {
+    float: right;
+    clear: both;
+}
+
+#send-container {
+    display: block;
+    margin: auto;
+    text-align: center;
+    max-width: 985px;
+    width: 100%;
+}
+
+#mssg {
+    width: 92%;
+    border: 2px solid black;
+    border-radius: 6px;
+    height: 34px;
+}
+
+.btn {
+    cursor: pointer;
+    border: 2px solid black;
+    height: 34px;
+}
+
+.btn:hover {
+    background-color: red;
+    color: #ffffff;
+}
+
+
+/* Additions to CSS for login section */
+
+#login-container {
+    max-width: 400px;
+    margin: auto;
+    background: rgba(248, 246, 242, 0.964);
+    margin-top: 190px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    margin-top: 10px;
+    Font-size : 25px;
+
+}
+
+#login-form {
+    margin-bottom: 20px;
+}
+
+/* #login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+ */
+
+ #login-form input[type="text"],
+#login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+#login-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+.inputs1{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input1{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 480px;
+    height: 80px;
+    border-radius: 6px;
+}
+
+.input1 img{
+    margin: 0px 30px;
+}
+
+.input1 input {
+    height: 50px; /* Adjust the height as needed */
+    width: 400px; /* Adjust the width as needed */
+    padding: 0px; /* Remove any extra padding */
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid #614f4f;
+    outline: none;
+    color: #797979;
+    font-size: 19px;
+}
